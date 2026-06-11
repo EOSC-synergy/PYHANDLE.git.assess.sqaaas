@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/Ophidia
+      branch: feature/pynblint_fix
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/EUDAT-B2HANDLE/PYHANDLE:
       branch: master
@@ -15,62 +15,62 @@ sqa_criteria:
     repos:
       github.com/EUDAT-B2HANDLE/PYHANDLE git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-gold-coati.sh
-        container: qc.acc_crappy-maroon-dormouse
+        - /usr/bin/env sh .sqa/script.ice_focused_hydra.sh
+        container: qc.acc_eggplant_determined_barracuda
   QC.Doc:
     repos:
       github.com/EUDAT-B2HANDLE/PYHANDLE find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-fuchsia-bobcat.sh
-        container: qc.doc_chewy-alizarin-robin
+        - /usr/bin/env sh .sqa/script.incarnadine_sympathetic_puffin.sh
+        container: qc.doc_reef_confused_snail
       github.com/EUDAT-B2HANDLE/PYHANDLE git:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-burgundy-markhor.sh
-        container: qc.doc_breezy-persimmon-meerkat
+        - /usr/bin/env sh .sqa/script.cream_upbeat_crane.sh
+        container: qc.doc_porcelain_determined_lynx
       github.com/EUDAT-B2HANDLE/PYHANDLE markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-chocolate-dragon.sh
-        container: qc.doc_wimpy-ecru-chinchilla
+        - /usr/bin/env sh .sqa/script.aquamarine_grateful_crocodile.sh
+        container: qc.doc_tundra_blissful_rhinoceros
       github.com/EUDAT-B2HANDLE/PYHANDLE restructuredtext-lint:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-teal-mole.sh
-        container: qc.doc_homey-maroon-earwig
+        - /usr/bin/env sh .sqa/script.currant_peppy_rattlesnake.sh
+        container: qc.doc_butter_innocent_llama
   QC.Lic:
     repos:
       github.com/EUDAT-B2HANDLE/PYHANDLE licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-wisteria-snake.sh
-        container: qc.lic_crappy-white-armadillo
+        - /usr/bin/env sh .sqa/script.peach_sweet_lynx.sh
+        container: qc.lic_pansy_organized_gull
   QC.Sec:
     repos:
       github.com/EUDAT-B2HANDLE/PYHANDLE bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-cinnabar-dhole.sh
-        container: qc.sec_crabby-smalt-devil
+        - /usr/bin/env sh .sqa/script.mango_courageous_viper.sh
+        container: qc.sec_cayenne_positive_phoenix
   QC.Sty:
     repos:
       github.com/EUDAT-B2HANDLE/PYHANDLE flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-bistre-fowl.sh
-        container: qc.sty_thirsty-scarlet-yak
+        - /usr/bin/env sh .sqa/script.daffodil_fearless_jackal.sh
+        container: qc.sty_mauve_reflective_griffin
       github.com/EUDAT-B2HANDLE/PYHANDLE hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-saffron-boar.sh
-        container: qc.sty_wheezy-russet-caiman
+        - /usr/bin/env sh .sqa/script.fog_whimsical_dragonfly.sh
+        container: qc.sty_grape_zany_emu
       github.com/EUDAT-B2HANDLE/PYHANDLE jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaky-taupe-antelope.sh
-        container: qc.sty_cloudy-plum-termite
+        - /usr/bin/env sh .sqa/script.jade_enthusiastic_wolf.sh
+        container: qc.sty_blush_impulsive_gull
   QC.Uni:
     repos:
       github.com/EUDAT-B2HANDLE/PYHANDLE pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.randy-teal-fousek.sh
-        container: qc.uni_sickly-celadon-skunk
+        - /usr/bin/env sh .sqa/script.ceru_sarcastic_wolverine.sh
+        container: qc.uni_cornflower_whimsical_clownfish
   QC.Ver:
     repos:
       github.com/EUDAT-B2HANDLE/PYHANDLE get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.paltry-orchid-fowl.sh
-        container: qc.ver_homely-aquamarine-cattle
+        - /usr/bin/env sh .sqa/script.incarnadine_smart_opossum.sh
+        container: qc.ver_slate_unique_panther
 timeout: 5400
